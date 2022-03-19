@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Vacunaciones 2022 | Vaccination</title>
+
+    <style>
+        .triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 55px 55px 0 55px;
+            border-color: #f1f5f9 transparent transparent transparent;
+        }
+
+        .triangle-2 {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 50px 50px 0;
+            border-color: transparent #6980fe transparent transparent;
+        }
+    </style>
+</head>
+
+<body class="font-body">
+
+    <!-- Header -->
+    <nav
+        class="fixed z-50 flex items-center justify-between min-w-full px-24 py-6 bg-white bg-opacity-80 backdrop-blur-sm firefox:backdrop-blur-sm firefox:backdrop-filter">
+        <!-- Logo -->
+        <p class="text-xl font-black text-blue-700 font-title">Vaccination</p>
+
+        <ul class="flex items-center space-x-12 font-medium text-slate-500">
+            <li class="cursor-pointer hover:text-slate-500">Database</li>
+            <li class="cursor-pointer hover:text-slate-500">Education</li>
+            <li class="cursor-pointer hover:text-slate-500">News</li>
+            <li class="cursor-pointer hover:text-slate-500">Regulation</li>
+            <li
+                class="px-8 py-3 text-white rounded shadow-lg cursor-pointer bg-gradient-to-r from-blue-700 to-blue-800 shadow-blue-500/50">
+                Hoax Buster</li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative grid grid-cols-2 gap-0">
+        <div class="pt-24">
+            <div class="inline-block pl-12 mb-6">
+                <svg class="h-12 rotate-180 text-slate-100" width="" height="138" viewBox="0 0 297 138"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M148.5 0L297 138H0L148.5 0Z" />
+                </svg>
+
+            </div>
+
+            <div class="px-24">
+                <h1 class="text-5xl font-black text-secondary-500 font-title ">Fight Virus With Vaccines</h1>
+                <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Neque
+                    doloribus
+                    fugiat cupiditate fugit
+                    voluptatibus iusto dolores beatae minus nulla expedita.</p>
+                <div class="flex items-center pt-10 space-x-8">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="flex items-center justify-center w-8 h-8 border border-white rounded shadow-lg text-amber-300 bg-yellow-50 shadow-yellow-200/50">
+                            <svg class="w-4 h-4 " width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.7281 21.9137C11.8389 21.9715 11.9627 22.0009 12.0865 22C12.2103 21.999 12.3332 21.9686 12.4449 21.9097L16.0128 20.0025C17.0246 19.4631 17.8169 18.8601 18.435 18.1579C19.779 16.6282 20.5129 14.6758 20.4998 12.6626L20.4575 6.02198C20.4535 5.25711 19.9512 4.57461 19.2082 4.32652L12.5708 2.09956C12.1711 1.96424 11.7332 1.96718 11.3405 2.10643L4.72827 4.41281C3.98932 4.67071 3.49602 5.35811 3.50005 6.12397L3.54233 12.7597C3.55542 14.7758 4.3145 16.7194 5.68064 18.2335C6.30482 18.9258 7.10417 19.52 8.12702 20.0505L11.7281 21.9137ZM10.7836 14.1089C10.9326 14.2521 11.1259 14.3227 11.3192 14.3207C11.5125 14.3198 11.7048 14.2472 11.8517 14.1021L15.7508 10.2581C16.0438 9.96882 16.0408 9.50401 15.7448 9.21866C15.4478 8.9333 14.9696 8.93526 14.6767 9.22454L11.3081 12.5449L9.92888 11.2191C9.63189 10.9337 9.1547 10.9367 8.86073 11.226C8.56777 11.5152 8.57079 11.98 8.86777 12.2654L10.7836 14.1089Z" />
+                            </svg>
+                        </div>
+                        <p class="text-[13px] font-medium text-blue-900">Best protection</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="flex items-center justify-center w-8 h-8 border border-white rounded shadow-lg text-amber-300 bg-yellow-50 shadow-yellow-200/50">
+                            <svg class="w-4 h-4 " width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path
+                                    d="M17.9184 14.3201C17.6594 14.5711 17.5404 14.9341 17.5994 15.2901L18.4884 20.2101C18.5634 20.6271 18.3874 21.0491 18.0384 21.2901C17.6964 21.5401 17.2414 21.5701 16.8684 21.3701L12.4394 19.0601C12.2854 18.9781 12.1144 18.9341 11.9394 18.9291H11.6684C11.5744 18.9431 11.4824 18.9731 11.3984 19.0191L6.96839 21.3401C6.74939 21.4501 6.50139 21.4891 6.25839 21.4501C5.66639 21.3381 5.27139 20.7741 5.36839 20.1791L6.25839 15.2591C6.31739 14.9001 6.19839 14.5351 5.93939 14.2801L2.32839 10.7801C2.02639 10.4871 1.92139 10.0471 2.05939 9.65012C2.19339 9.25412 2.53539 8.96512 2.94839 8.90012L7.91839 8.17912C8.29639 8.14012 8.62839 7.91012 8.79839 7.57012L10.9884 3.08012C11.0404 2.98012 11.1074 2.88812 11.1884 2.81012L11.2784 2.74012C11.3254 2.68812 11.3794 2.64512 11.4394 2.61012L11.5484 2.57012L11.7184 2.50012H12.1394C12.5154 2.53912 12.8464 2.76412 13.0194 3.10012L15.2384 7.57012C15.3984 7.89712 15.7094 8.12412 16.0684 8.17912L21.0384 8.90012C21.4584 8.96012 21.8094 9.25012 21.9484 9.65012C22.0794 10.0511 21.9664 10.4911 21.6584 10.7801L17.9184 14.3201Z" />
+                            </svg>
+                        </div>
+                        <p class="text-[13px]  font-medium text-blue-900">Selected Vaccines</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center pt-24 pb-40 space-x-4">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 text-blue-700 border border-white rounded shadow-lg bg-blue-50 shadow-blue-200/50">
+                        <svg class="w-5 h-5 " width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 22.0001C6.48 22.0001 2 17.5301 2 12.0001C2 6.48012 6.48 2.00012 12 2.00012C17.53 2.00012 22 6.48012 22 12.0001C22 17.5301 17.53 22.0001 12 22.0001ZM15.19 15.7101C15.31 15.7801 15.44 15.8201 15.58 15.8201C15.83 15.8201 16.08 15.6901 16.22 15.4501C16.43 15.1001 16.32 14.6401 15.96 14.4201L12.4 12.3001V7.68012C12.4 7.26012 12.06 6.93012 11.65 6.93012C11.24 6.93012 10.9 7.26012 10.9 7.68012V12.7301C10.9 12.9901 11.04 13.2301 11.27 13.3701L15.19 15.7101Z" />
+                        </svg>
+                    </div>
+                    <p class="font-semibold text-secondary-500">Schedule your vaccinations</p>
+                </div>
+            </div>
+        </div>
+        <div class="h-full">
+            <img class="object-cover h-full"
+                src="./assets/img/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue.jpg"
+                alt="">
+        </div>
+
+        <div class="absolute space-y-8 bottom-6 left-24">
+            <div
+                class="flex items-center py-8 space-x-12 bg-white rounded shadow-2xl px-14 shadow-blue-500/30 bg-opacity-90 backdrop-blur-sm backdrop-filter">
+                <div class="flex space-x-4">
+                    <div class="flex items-center justify-center w-6 h-6 text-blue-700 rounded bg-blue-50">
+                        <svg class="w-3.5 h-3.5 " width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.5 10.3178C3.5 5.71789 7.34388 2 11.9934 2C16.6561 2 20.5 5.71789 20.5 10.3178C20.5 12.6357 19.657 14.7876 18.2695 16.6116C16.7388 18.6235 14.8522 20.3765 12.7285 21.7524C12.2425 22.0704 11.8039 22.0944 11.2704 21.7524C9.13474 20.3765 7.24809 18.6235 5.7305 16.6116C4.34198 14.7876 3.5 12.6357 3.5 10.3178ZM9.19423 10.5768C9.19423 12.1177 10.4517 13.3297 11.9934 13.3297C13.5362 13.3297 14.8058 12.1177 14.8058 10.5768C14.8058 9.0478 13.5362 7.77683 11.9934 7.77683C10.4517 7.77683 9.19423 9.0478 9.19423 10.5768Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-medium text-slate-500">Location</p>
+                        <p class="text-lg font-semibold text-secondary-500">Jakatra Utara</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="flex items-center justify-center w-6 h-6 text-blue-700 rounded bg-blue-50">
+                        <svg class="w-3.5 h-3.5 " width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52148 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.5877 15.6556 6.5877C15.2212 6.5887 14.8943 6.24887 14.8943 5.81909L14.8934 5.0095L9.02863 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27036 6.5967C7.83594 6.5977 7.50913 6.25887 7.50913 5.82809L7.50815 5.05847C5.58286 5.25137 4.51753 6.38281 4.52049 8.55072L4.52148 8.86157ZM15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043ZM16.0554 17.892C15.6013 17.882 15.235 17.5032 15.234 17.0435C15.2241 16.5837 15.5884 16.2029 16.0426 16.1919H16.0525C16.5165 16.1919 16.8927 16.5707 16.8927 17.0405C16.8937 17.5102 16.5185 17.891 16.0554 17.892ZM11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7903 12.9085 12.425 12.5587 11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203ZM12.0262 17.8471C11.572 17.8671 11.1968 17.5082 11.1761 17.0485C11.1761 16.5887 11.5305 16.2089 11.9847 16.1879C12.429 16.1869 12.7953 16.5367 12.8052 16.9855C12.8259 17.4463 12.4705 17.8261 12.0262 17.8471ZM7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73243 13.3933C8.72256 12.9435 8.35725 12.5937 7.91196 12.5947C7.45779 12.6147 7.10334 12.9955 7.10433 13.4553ZM7.95837 17.8521C7.5042 17.8731 7.12901 17.5132 7.10828 17.0535C7.10729 16.5937 7.46273 16.2129 7.9169 16.1929C8.3612 16.1919 8.7275 16.5417 8.73737 16.9915C8.7581 17.4513 8.40365 17.8321 7.95837 17.8521Z" />
+                        </svg>
+
+                    </div>
+                    <div>
+                        <p class="font-medium text-slate-500">Date</p>
+                        <p class="text-lg font-semibold text-secondary-500"> 08 july 2021</p>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <div class="flex items-center justify-center w-6 h-6 text-blue-700 rounded bg-blue-50">
+
+                        <svg class="w-3.5 h-3.5 " width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.3764 20.0279L18.1628 8.66544C18.6403 8.0527 18.8101 7.3443 18.6509 6.62299C18.513 5.96726 18.1097 5.34377 17.5049 4.87078L16.0299 3.69906C14.7459 2.67784 13.1541 2.78534 12.2415 3.95706L11.2546 5.23735C11.1273 5.39752 11.1591 5.63401 11.3183 5.76301C11.3183 5.76301 13.812 7.76246 13.8651 7.80546C14.0349 7.96671 14.1622 8.1817 14.1941 8.43969C14.2471 8.94493 13.8969 9.41792 13.377 9.48242C13.1329 9.51467 12.8994 9.43942 12.7297 9.29967L10.1086 7.21422C9.98126 7.11855 9.79025 7.13898 9.68413 7.26797L3.45514 15.3303C3.0519 15.8355 2.91395 16.4912 3.0519 17.1255L3.84777 20.5761C3.89021 20.7589 4.04939 20.8879 4.24039 20.8879L7.74222 20.8449C8.37891 20.8341 8.97316 20.5439 9.3764 20.0279ZM14.2797 18.9533H19.9898C20.5469 18.9533 21 19.4123 21 19.9766C21 20.5421 20.5469 21 19.9898 21H14.2797C13.7226 21 13.2695 20.5421 13.2695 19.9766C13.2695 19.4123 13.7226 18.9533 14.2797 18.9533Z" />
+                        </svg>
+
+
+                    </div>
+                    <div>
+                        <p class="font-medium text-slate-500">Vaccine Type</p>
+                        <p class="text-lg font-semibold text-secondary-500">Moderna </p>
+                    </div>
+                </div>
+                <div>
+                    <button
+                        class="px-8 py-3 text-white rounded shadow-lg cursor-pointer bg-gradient-to-r from-blue-700 to-blue-800 shadow-blue-500/50">Submit</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Logos -->
+    <div class="flex items-center justify-center my-24 space-x-20">
+        <img class="w-48 grayscale opacity-10" src="./assets/icon/Astra.svg" alt="AstraZeneca Logo">
+        <img class="w-48 grayscale opacity-10" src="./assets/icon/Sinovac logo 1.svg" alt="Sinova Logo">
+        <img class="w-48 grayscale opacity-10" src="./assets/icon/pfizer-wordmark-1 1.svg" alt="Pfizer Logo">
+        <img class="w-48 grayscale opacity-10" src="./assets/icon/Moderna_logo 1.svg" alt="Moderna Logo">
+    </div>
+
+    <!-- Por que debería de vacunarme -->
+    <div class="px-24">
+        <div class="w-1/2">
+            <h2 class="text-3xl font-black text-secondary-500 font-title ">Why should I vaccine?</h2>
+            <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+                doloribus
+                fugiat cupiditate fugit
+                voluptatibus iusto dolores beatae minus nulla expedita.</p>
+        </div>
+
+        <div class="flex items-center justify-between my-12">
+            <div
+                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                <div
+                    class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.87774 6.37856C8.87774 8.24523 7.33886 9.75821 5.43887 9.75821C3.53999 9.75821 2 8.24523 2 6.37856C2 4.51298 3.53999 3 5.43887 3C7.33886 3 8.87774 4.51298 8.87774 6.37856ZM20.4933 4.89833C21.3244 4.89833 22 5.56203 22 6.37856C22 7.19618 21.3244 7.85989 20.4933 7.85989H13.9178C13.0856 7.85989 12.4101 7.19618 12.4101 6.37856C12.4101 5.56203 13.0856 4.89833 13.9178 4.89833H20.4933ZM3.50777 15.958H10.0833C10.9155 15.958 11.5911 16.6217 11.5911 17.4393C11.5911 18.2558 10.9155 18.9206 10.0833 18.9206H3.50777C2.67555 18.9206 2 18.2558 2 17.4393C2 16.6217 2.67555 15.958 3.50777 15.958ZM18.5611 20.7778C20.4611 20.7778 22 19.2648 22 17.3992C22 15.5325 20.4611 14.0196 18.5611 14.0196C16.6623 14.0196 15.1223 15.5325 15.1223 17.3992C15.1223 19.2648 16.6623 20.7778 18.5611 20.7778Z" />
+                    </svg>
+
+                </div>
+
+                <p class="text-lg font-medium text-secondary-500">Minimize the spread of viruses</p>
+                <p class="my-3 text-slate-500 text-[11px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates aut.</p>
+            </div>
+
+            <div
+                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                <div
+                    class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.7281 21.9137C11.8389 21.9715 11.9627 22.0009 12.0865 22C12.2103 21.999 12.3332 21.9686 12.4449 21.9097L16.0128 20.0025C17.0246 19.4631 17.8169 18.8601 18.435 18.1579C19.779 16.6282 20.5129 14.6758 20.4998 12.6626L20.4575 6.02198C20.4535 5.25711 19.9512 4.57461 19.2082 4.32652L12.5708 2.09956C12.1711 1.96424 11.7332 1.96718 11.3405 2.10643L4.72827 4.41281C3.98932 4.67071 3.49602 5.35811 3.50005 6.12397L3.54233 12.7597C3.55542 14.7758 4.3145 16.7194 5.68064 18.2335C6.30482 18.9258 7.10417 19.52 8.12702 20.0505L11.7281 21.9137ZM10.7836 14.1089C10.9326 14.2521 11.1259 14.3227 11.3192 14.3207C11.5125 14.3198 11.7048 14.2472 11.8517 14.1021L15.7508 10.2581C16.0438 9.96882 16.0408 9.50401 15.7448 9.21866C15.4478 8.9333 14.9696 8.93526 14.6767 9.22454L11.3081 12.5449L9.92888 11.2191C9.63189 10.9337 9.1547 10.9367 8.86073 11.226C8.56777 11.5152 8.57079 11.98 8.86777 12.2654L10.7836 14.1089Z" />
+                    </svg>
+
+                </div>
+
+                <p class="text-lg font-medium text-secondary-500">Forming antibodies</p>
+                <p class="my-3 text-slate-500 text-[11px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates aut.</p>
+            </div>
+
+            <div
+                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                <div
+                    class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.1583 8.23285C16.1583 10.5825 14.2851 12.4666 11.949 12.4666C9.61292 12.4666 7.73974 10.5825 7.73974 8.23285C7.73974 5.88227 9.61292 4 11.949 4C14.2851 4 16.1583 5.88227 16.1583 8.23285ZM11.949 20C8.51785 20 5.58809 19.456 5.58809 17.2802C5.58809 15.1034 8.49904 14.5396 11.949 14.5396C15.3802 14.5396 18.31 15.0836 18.31 17.2604C18.31 19.4362 15.399 20 11.949 20ZM17.9571 8.30922C17.9571 9.50703 17.5998 10.6229 16.973 11.5505C16.9086 11.646 16.9659 11.7748 17.0796 11.7946C17.2363 11.8216 17.3984 11.8369 17.5631 11.8414C19.2062 11.8846 20.6809 10.821 21.0883 9.21974C21.6918 6.84123 19.9198 4.7059 17.6634 4.7059C17.4181 4.7059 17.1835 4.73201 16.9551 4.77884C16.9238 4.78605 16.8907 4.80046 16.8728 4.82838C16.8513 4.8626 16.8674 4.90853 16.8889 4.93825C17.5667 5.8938 17.9571 7.05918 17.9571 8.30922ZM20.6782 13.5126C21.7823 13.7296 22.5084 14.1727 22.8093 14.8166C23.0636 15.3453 23.0636 15.9586 22.8093 16.4864C22.349 17.4851 20.8654 17.8058 20.2887 17.8886C20.1696 17.9066 20.0738 17.8031 20.0864 17.6833C20.3809 14.9157 18.0377 13.6035 17.4315 13.3018C17.4055 13.2883 17.4002 13.2676 17.4028 13.255C17.4046 13.246 17.4154 13.2316 17.4351 13.2289C18.7468 13.2046 20.1571 13.3847 20.6782 13.5126ZM6.43711 11.8413C6.60186 11.8368 6.76304 11.8224 6.92063 11.7945C7.03434 11.7747 7.09165 11.6459 7.02718 11.5504C6.4004 10.6228 6.04313 9.50694 6.04313 8.30913C6.04313 7.05909 6.43353 5.89371 7.11135 4.93816C7.13284 4.90844 7.14806 4.86251 7.12746 4.82829C7.10956 4.80127 7.07553 4.78596 7.04509 4.77875C6.81586 4.73192 6.58127 4.70581 6.33593 4.70581C4.07951 4.70581 2.30751 6.84114 2.91191 9.21965C3.31932 10.8209 4.79405 11.8845 6.43711 11.8413ZM6.59694 13.2545C6.59962 13.268 6.59425 13.2878 6.56918 13.3022C5.9621 13.6039 3.61883 14.9161 3.91342 17.6827C3.92595 17.8034 3.83104 17.9061 3.71195 17.889C3.13531 17.8061 1.65163 17.4855 1.19139 16.4867C0.936203 15.9581 0.936203 15.3457 1.19139 14.817C1.49225 14.1731 2.21752 13.73 3.32156 13.512C3.84358 13.385 5.25294 13.2049 6.5656 13.2292C6.5853 13.2319 6.59515 13.2464 6.59694 13.2545Z" />
+                    </svg>
+
+                </div>
+
+                <p class="text-lg font-medium text-secondary-500">Protecting people nearby</p>
+                <p class="my-3 text-slate-500 text-[11px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates aut.</p>
+            </div>
+
+            <div
+                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                <div
+                    class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.1799 4.41C17.1799 3.08 18.2599 2 19.5899 2C20.9199 2 21.9999 3.08 21.9999 4.41C21.9999 5.74 20.9199 6.82 19.5899 6.82C18.2599 6.82 17.1799 5.74 17.1799 4.41ZM13.3298 14.7593L16.2198 11.0303L16.1798 11.0503C16.3398 10.8303 16.3698 10.5503 16.2598 10.3003C16.1508 10.0503 15.9098 9.8803 15.6508 9.8603C15.3798 9.8303 15.1108 9.9503 14.9498 10.1703L12.5308 13.3003L9.75976 11.1203C9.58976 10.9903 9.38976 10.9393 9.18976 10.9603C8.99076 10.9903 8.81076 11.0993 8.68976 11.2593L5.73076 15.1103L5.66976 15.2003C5.49976 15.5193 5.57976 15.9293 5.87976 16.1503C6.01976 16.2403 6.16976 16.3003 6.33976 16.3003C6.57076 16.3103 6.78976 16.1893 6.92976 16.0003L9.43976 12.7693L12.2898 14.9103L12.3798 14.9693C12.6998 15.1393 13.0998 15.0603 13.3298 14.7593ZM15.4498 3.7803C15.4098 4.0303 15.3898 4.2803 15.3898 4.5303C15.3898 6.7803 17.2098 8.5993 19.4498 8.5993C19.6998 8.5993 19.9398 8.5703 20.1898 8.5303V16.5993C20.1898 19.9903 18.1898 22.0003 14.7898 22.0003H7.40076C3.99976 22.0003 1.99976 19.9903 1.99976 16.5993V9.2003C1.99976 5.8003 3.99976 3.7803 7.40076 3.7803H15.4498Z" />
+                    </svg>
+
+                </div>
+
+                <p class="text-lg font-medium text-secondary-500">Creating group inmunity</p>
+                <p class="my-3 text-slate-500 text-[11px]">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates aut.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Características -->
+    <div class="my-40">
+        <div class="grid grid-cols-2">
+            <div class="col-span-1">
+                <img class="object-cover h-full" src="./assets/img/158043400-4e61ba68-49b1-4967-901f-80436161e101.png"
+                    alt="Caracteristicas Enfermera">
+            </div>
+            <div class="col-span-1 px-16">
+                <h2 class="text-3xl font-black text-secondary-500 font-title ">Preparations before vaccine</h2>
+                <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus,
+                    similique dolore harum quis illo temporibus, eaque minus sapiente enim mollitia modi quisquam
+                    impedit quam veniam consequatur tempora culpa.</p>
+
+                <div class="mt-16 space-y-6">
+                    <!-- Característica 1 -->
+                    <div x-data=" {isOpen : false}"
+                        class="p-3 px-6 bg-white border rounded-md cursor-pointer border-slate-100">
+                        <div @click="isOpen = !isOpen" class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center justify-center w-10 h-10 text-blue-700 rounded bg-blue-50"
+                                    :class="{'border border-white shadow-xl bg-opacity-90  shadow-indigo-500/20' : isOpen}">
+                                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.2015 4.32867C19.9463 4.57382 20.4496 5.26122 20.4496 6.02608L20.4999 12.6637C20.51 14.674 19.7752 16.6253 18.4265 18.1561C17.8126 18.8621 17.0175 19.4603 16.011 19.9996L12.438 21.9117C12.3273 21.9706 12.2065 22 12.0857 22C11.9649 22 11.8341 21.9706 11.7234 21.9117L8.12015 20.0486C7.1036 19.5191 6.30848 18.9307 5.68446 18.2345C4.31564 16.7244 3.55072 14.773 3.54065 12.7628L3.50039 6.12316C3.49033 5.3583 3.99357 4.67286 4.7283 4.41693L11.3409 2.1037C11.7334 1.96543 12.1662 1.96543 12.5688 2.1037L19.2015 4.32867ZM14.4207 14.0866C14.7126 13.8022 14.7126 13.3315 14.4207 13.0472L13.062 11.7224L14.4207 10.3995C14.7126 10.1152 14.7126 9.65429 14.4207 9.35913C14.1289 9.07476 13.6457 9.07476 13.3539 9.35913L11.9951 10.6839L10.6364 9.35913C10.3445 9.07476 9.87143 9.07476 9.56949 9.35913C9.27761 9.65429 9.27761 10.1152 9.56949 10.3995L10.9282 11.7224L9.56949 13.0472C9.27761 13.3315 9.27761 13.8022 9.56949 14.0866C9.72046 14.2337 9.91169 14.3013 10.1029 14.3013C10.3042 14.3013 10.4955 14.2337 10.6364 14.0866L11.9951 12.7628L13.3539 14.0866C13.5048 14.2337 13.6961 14.3013 13.8873 14.3013C14.0785 14.3013 14.2798 14.2337 14.4207 14.0866Z" />
+                                    </svg>
+
+
+                                </div>
+                                <p class="text-lg font-medium text-secondary-500">Avoid alcoholic beverages</p>
+                            </div>
+                            <div class="flex items-center justify-center w-8 h-8 text-blue-700 rounded bg-blue-50 "
+                                :class="{'border border-white shadow-xl text-slate-500 shadow-blue-400/20' : isOpen}">
+                                <svg class="w-5 h-5 duration-300" :class="{'transform rotate-180' : isOpen}" width="24"
+                                    height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.869 16.6308C10.811 16.5743 10.563 16.3609 10.359 16.1622C9.076 14.9971 6.976 11.9576 6.335 10.3668C6.232 10.1252 6.014 9.51437 6 9.18802C6 8.8753 6.072 8.5772 6.218 8.29274C6.422 7.93814 6.743 7.65368 7.122 7.49781C7.385 7.39747 8.172 7.2416 8.186 7.2416C9.047 7.08573 10.446 7 11.992 7C13.465 7 14.807 7.08573 15.681 7.21335C15.695 7.22796 16.673 7.38383 17.008 7.55431C17.62 7.86702 18 8.47784 18 9.13151V9.18802C17.985 9.61374 17.605 10.509 17.591 10.509C16.949 12.0141 14.952 14.9834 13.625 16.1768C13.625 16.1768 13.284 16.5129 13.071 16.659C12.765 16.887 12.386 17 12.007 17C11.584 17 11.19 16.8724 10.869 16.6308Z" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div x-show.transition="isOpen" x-cloak x-transition:enter="duration-200 ease-out"
+                            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95" >
+                            <p class="my-5 text-sm mx-14 text-slate-500">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita, vitae beatae assumenda dolorum architecto dolores.</p>
+                        </div>
+                    </div>
+                    <!-- Característica 2 -->
+                    <div x-data=" {isOpen : true}"
+                        class="p-3 px-6 bg-white border rounded-md cursor-pointer border-slate-100">
+                        <div @click="isOpen = !isOpen" class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center justify-center w-10 h-10 text-blue-700 rounded bg-blue-50"
+                                    :class="{'border border-white shadow-xl bg-opacity-90  shadow-indigo-500/20' : isOpen}">
+                                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.66976 1.99921H16.3398C19.7298 1.99921 21.9998 4.37921 21.9998 7.91921V16.0902C21.9998 19.6202 19.7298 21.9992 16.3398 21.9992H7.66976C4.27976 21.9992 1.99976 19.6202 1.99976 16.0902V7.91921C1.99976 4.37921 4.27976 1.99921 7.66976 1.99921ZM15.0098 14.9992C15.3498 14.6602 15.3498 14.1102 15.0098 13.7702L13.2298 11.9902L15.0098 10.2092C15.3498 9.87021 15.3498 9.31021 15.0098 8.97021C14.6698 8.62921 14.1198 8.62921 13.7698 8.97021L11.9998 10.7492L10.2198 8.97021C9.86976 8.62921 9.31976 8.62921 8.97976 8.97021C8.63976 9.31021 8.63976 9.87021 8.97976 10.2092L10.7598 11.9902L8.97976 13.7602C8.63976 14.1102 8.63976 14.6602 8.97976 14.9992C9.14976 15.1692 9.37976 15.2602 9.59976 15.2602C9.82976 15.2602 10.0498 15.1692 10.2198 14.9992L11.9998 13.2302L13.7798 14.9992C13.9498 15.1802 14.1698 15.2602 14.3898 15.2602C14.6198 15.2602 14.8398 15.1692 15.0098 14.9992Z" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-lg font-medium text-secondary-500">Avoid stress</p>
+                            </div>
+                            <div class="flex items-center justify-center w-8 h-8 text-blue-700 rounded bg-blue-50 "
+                                :class="{'border border-white shadow-xl text-slate-500 shadow-blue-400/20' : isOpen}">
+                                <svg class="w-5 h-5 duration-300" :class="{'transform rotate-180' : isOpen}" width="24"
+                                    height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.869 16.6308C10.811 16.5743 10.563 16.3609 10.359 16.1622C9.076 14.9971 6.976 11.9576 6.335 10.3668C6.232 10.1252 6.014 9.51437 6 9.18802C6 8.8753 6.072 8.5772 6.218 8.29274C6.422 7.93814 6.743 7.65368 7.122 7.49781C7.385 7.39747 8.172 7.2416 8.186 7.2416C9.047 7.08573 10.446 7 11.992 7C13.465 7 14.807 7.08573 15.681 7.21335C15.695 7.22796 16.673 7.38383 17.008 7.55431C17.62 7.86702 18 8.47784 18 9.13151V9.18802C17.985 9.61374 17.605 10.509 17.591 10.509C16.949 12.0141 14.952 14.9834 13.625 16.1768C13.625 16.1768 13.284 16.5129 13.071 16.659C12.765 16.887 12.386 17 12.007 17C11.584 17 11.19 16.8724 10.869 16.6308Z" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div x-show.transition="isOpen" x-cloak x-transition:enter="duration-200 ease-out"
+                            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95" >
+                            <p class="my-5 text-sm mx-14 text-slate-500">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita, vitae beatae assumenda dolorum architecto dolores.</p>
+                        </div>
+                    </div>
+                    <!-- Característica 3 -->
+                    <div x-data=" {isOpen : false}"
+                        class="p-3 px-6 bg-white border rounded-md cursor-pointer border-slate-100">
+                        <div @click="isOpen = !isOpen" class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center justify-center w-10 h-10 text-blue-700 rounded bg-blue-50"
+                                    :class="{'border border-white shadow-xl bg-opacity-90  shadow-indigo-500/20' : isOpen}">
+                                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.33049 2.00043H16.6695C20.0705 2.00043 21.9905 3.92943 22.0005 7.33043V16.6704C22.0005 20.0704 20.0705 22.0004 16.6695 22.0004H7.33049C3.92949 22.0004 2.00049 20.0704 2.00049 16.6704V7.33043C2.00049 3.92943 3.92949 2.00043 7.33049 2.00043ZM12.0495 17.8604C12.4805 17.8604 12.8395 17.5404 12.8795 17.1104V6.92043C12.9195 6.61043 12.7705 6.29943 12.5005 6.13043C12.2195 5.96043 11.8795 5.96043 11.6105 6.13043C11.3395 6.29943 11.1905 6.61043 11.2195 6.92043V17.1104C11.2705 17.5404 11.6295 17.8604 12.0495 17.8604ZM16.6505 17.8604C17.0705 17.8604 17.4295 17.5404 17.4805 17.1104V13.8304C17.5095 13.5094 17.3605 13.2104 17.0895 13.0404C16.8205 12.8704 16.4805 12.8704 16.2005 13.0404C15.9295 13.2104 15.7805 13.5094 15.8205 13.8304V17.1104C15.8605 17.5404 16.2195 17.8604 16.6505 17.8604ZM8.21949 17.1104C8.17949 17.5404 7.82049 17.8604 7.38949 17.8604C6.95949 17.8604 6.59949 17.5404 6.56049 17.1104V10.2004C6.53049 9.88943 6.67949 9.58043 6.95049 9.41043C7.21949 9.24043 7.56049 9.24043 7.83049 9.41043C8.09949 9.58043 8.25049 9.88943 8.21949 10.2004V17.1104Z" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-lg font-medium text-secondary-500">Eat healthy food</p>
+                            </div>
+                            <div class="flex items-center justify-center w-8 h-8 text-blue-700 rounded bg-blue-50 "
+                                :class="{'border border-white shadow-xl text-slate-500 shadow-blue-400/20' : isOpen}">
+                                <svg class="w-5 h-5 duration-300" :class="{'transform rotate-180' : isOpen}" width="24"
+                                    height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.869 16.6308C10.811 16.5743 10.563 16.3609 10.359 16.1622C9.076 14.9971 6.976 11.9576 6.335 10.3668C6.232 10.1252 6.014 9.51437 6 9.18802C6 8.8753 6.072 8.5772 6.218 8.29274C6.422 7.93814 6.743 7.65368 7.122 7.49781C7.385 7.39747 8.172 7.2416 8.186 7.2416C9.047 7.08573 10.446 7 11.992 7C13.465 7 14.807 7.08573 15.681 7.21335C15.695 7.22796 16.673 7.38383 17.008 7.55431C17.62 7.86702 18 8.47784 18 9.13151V9.18802C17.985 9.61374 17.605 10.509 17.591 10.509C16.949 12.0141 14.952 14.9834 13.625 16.1768C13.625 16.1768 13.284 16.5129 13.071 16.659C12.765 16.887 12.386 17 12.007 17C11.584 17 11.19 16.8724 10.869 16.6308Z" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div x-show.transition="isOpen" x-cloak x-transition:enter="duration-200 ease-out"
+                            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95" >
+                            <p class="my-5 text-sm mx-14 text-slate-500">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita, vitae beatae assumenda dolorum architecto dolores.</p>
+                        </div>
+                    </div>
+                    <!-- Característica 4 -->
+                    <div x-data=" {isOpen : false}"
+                        class="p-3 px-6 bg-white border rounded-md cursor-pointer border-slate-100">
+                        <div @click="isOpen = !isOpen" class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center justify-center w-10 h-10 text-blue-700 rounded bg-blue-50"
+                                    :class="{'border border-white shadow-xl bg-opacity-90  shadow-indigo-500/20' : isOpen}">
+                                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.67012 1.99988H16.3401C19.7301 1.99988 22.0001 4.37988 22.0001 7.91988V16.0909C22.0001 19.6199 19.7301 21.9999 16.3401 21.9999H7.67012C4.28012 21.9999 2.00012 19.6199 2.00012 16.0909V7.91988C2.00012 4.37988 4.28012 1.99988 7.67012 1.99988ZM11.4301 14.9899L16.1801 10.2399C16.5201 9.89988 16.5201 9.34988 16.1801 8.99988C15.8401 8.65988 15.2801 8.65988 14.9401 8.99988L10.8101 13.1299L9.06012 11.3799C8.72012 11.0399 8.16012 11.0399 7.82012 11.3799C7.48012 11.7199 7.48012 12.2699 7.82012 12.6199L10.2001 14.9899C10.3701 15.1599 10.5901 15.2399 10.8101 15.2399C11.0401 15.2399 11.2601 15.1599 11.4301 14.9899Z" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-lg font-medium text-secondary-500">Get enough sleep</p>
+                            </div>
+                            <div class="flex items-center justify-center w-8 h-8 text-blue-700 rounded bg-blue-50 "
+                                :class="{'border border-white shadow-xl text-slate-500 shadow-blue-400/20' : isOpen}">
+                                <svg class="w-5 h-5 duration-300" :class="{'transform rotate-180' : isOpen}" width="24"
+                                    height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.869 16.6308C10.811 16.5743 10.563 16.3609 10.359 16.1622C9.076 14.9971 6.976 11.9576 6.335 10.3668C6.232 10.1252 6.014 9.51437 6 9.18802C6 8.8753 6.072 8.5772 6.218 8.29274C6.422 7.93814 6.743 7.65368 7.122 7.49781C7.385 7.39747 8.172 7.2416 8.186 7.2416C9.047 7.08573 10.446 7 11.992 7C13.465 7 14.807 7.08573 15.681 7.21335C15.695 7.22796 16.673 7.38383 17.008 7.55431C17.62 7.86702 18 8.47784 18 9.13151V9.18802C17.985 9.61374 17.605 10.509 17.591 10.509C16.949 12.0141 14.952 14.9834 13.625 16.1768C13.625 16.1768 13.284 16.5129 13.071 16.659C12.765 16.887 12.386 17 12.007 17C11.584 17 11.19 16.8724 10.869 16.6308Z" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div x-show.transition="isOpen" x-cloak x-transition:enter="duration-200 ease-out"
+                            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95" >
+                            <p class="my-5 text-sm mx-14 text-slate-500">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita, vitae beatae assumenda dolorum architecto dolores.</p>
+                        </div>
+                    </div>
+                    <!-- Característica 5 -->
+                    <div x-data=" {isOpen : false}"
+                        class="p-3 px-6 bg-white border rounded-md cursor-pointer border-slate-100">
+                        <div @click="isOpen = !isOpen" class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center justify-center w-10 h-10 text-blue-700 rounded bg-blue-50"
+                                    :class="{'border border-white shadow-xl bg-opacity-90  shadow-indigo-500/20' : isOpen}">
+                                    <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.8498 2.50071C16.4808 2.50071 17.1108 2.58971 17.7098 2.79071C21.4008 3.99071 22.7308 8.04071 21.6198 11.5807C20.9898 13.3897 19.9598 15.0407 18.6108 16.3897C16.6798 18.2597 14.5608 19.9197 12.2798 21.3497L12.0298 21.5007L11.7698 21.3397C9.48077 19.9197 7.34977 18.2597 5.40077 16.3797C4.06077 15.0307 3.02977 13.3897 2.38977 11.5807C1.25977 8.04071 2.58977 3.99071 6.32077 2.76971C6.61077 2.66971 6.90977 2.59971 7.20977 2.56071H7.32977C7.61077 2.51971 7.88977 2.50071 8.16977 2.50071H8.27977C8.90977 2.51971 9.51977 2.62971 10.1108 2.83071H10.1698C10.2098 2.84971 10.2398 2.87071 10.2598 2.88971C10.4808 2.96071 10.6898 3.04071 10.8898 3.15071L11.2698 3.32071C11.3616 3.36968 11.4647 3.44451 11.5537 3.50918C11.6102 3.55015 11.661 3.58705 11.6998 3.61071C11.7161 3.62034 11.7327 3.63002 11.7494 3.63978C11.8351 3.68983 11.9245 3.74197 11.9998 3.79971C13.1108 2.95071 14.4598 2.49071 15.8498 2.50071ZM18.5098 9.70071C18.9198 9.68971 19.2698 9.36071 19.2998 8.93971V8.82071C19.3298 7.41971 18.4808 6.15071 17.1898 5.66071C16.7798 5.51971 16.3298 5.74071 16.1798 6.16071C16.0398 6.58071 16.2598 7.04071 16.6798 7.18971C17.3208 7.42971 17.7498 8.06071 17.7498 8.75971V8.79071C17.7308 9.01971 17.7998 9.24071 17.9398 9.41071C18.0798 9.58071 18.2898 9.67971 18.5098 9.70071Z" />
+                                    </svg>
+
+
+                                </div>
+                                <p class="text-lg font-medium text-secondary-500">Exercise or physical activity</p>
+                            </div>
+                            <div class="flex items-center justify-center w-8 h-8 text-blue-700 rounded bg-blue-50 "
+                                :class="{'border border-white shadow-xl text-slate-500 shadow-blue-400/20' : isOpen}">
+                                <svg class="w-5 h-5 duration-300" :class="{'transform rotate-180' : isOpen}" width="24"
+                                    height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10.869 16.6308C10.811 16.5743 10.563 16.3609 10.359 16.1622C9.076 14.9971 6.976 11.9576 6.335 10.3668C6.232 10.1252 6.014 9.51437 6 9.18802C6 8.8753 6.072 8.5772 6.218 8.29274C6.422 7.93814 6.743 7.65368 7.122 7.49781C7.385 7.39747 8.172 7.2416 8.186 7.2416C9.047 7.08573 10.446 7 11.992 7C13.465 7 14.807 7.08573 15.681 7.21335C15.695 7.22796 16.673 7.38383 17.008 7.55431C17.62 7.86702 18 8.47784 18 9.13151V9.18802C17.985 9.61374 17.605 10.509 17.591 10.509C16.949 12.0141 14.952 14.9834 13.625 16.1768C13.625 16.1768 13.284 16.5129 13.071 16.659C12.765 16.887 12.386 17 12.007 17C11.584 17 11.19 16.8724 10.869 16.6308Z" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+
+                        <div x-show.transition="isOpen" x-cloak x-transition:enter="duration-200 ease-out"
+                            x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                            x-transition:leave="duration-100 ease-in" x-transition:leave-start="opacity-100 scale-100"
+                            x-transition:leave-end="opacity-0 scale-95" >
+                            <p class="my-5 text-sm mx-14 text-slate-500">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Expedita, vitae beatae assumenda dolorum architecto dolores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="my-40">
+        <div class="grid grid-cols-2">
+            <div class="col-span-1 px-24">
+                <h2 class="text-3xl font-black text-secondary-500 font-title ">Emergency Contact</h2>
+                <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus,
+                    similique dolore harum quis illo temporibus, eaque minus sapiente enim mollitia modi quisquam
+                    impedit quam veniam consequatur tempora culpa.</p>
+
+                <div class="flex flex-wrap w-full gap-5 mt-40 ">
+                    <div
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                                <svg class="w-7 h-7 " width="24" height="24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path
+                                        d="M14.4183 5.48994C13.9422 5.402 13.505 5.70579 13.4144 6.17048C13.3238 6.63516 13.6285 7.08884 14.0916 7.17978C15.4859 7.4516 16.5624 8.53085 16.8353 9.92989V9.93089C16.913 10.3336 17.2675 10.6264 17.6759 10.6264C17.7306 10.6264 17.7854 10.6214 17.8412 10.6114C18.3043 10.5185 18.609 10.0658 18.5184 9.60012C18.1111 7.51055 16.5027 5.89666 14.4183 5.48994Z" />
+                                    <path
+                                        d="M14.356 2.00793C14.1329 1.97595 13.9088 2.04191 13.7305 2.18381C13.5473 2.32771 13.4328 2.53557 13.4079 2.76841C13.3551 3.23908 13.6947 3.66479 14.1648 3.71776C17.4064 4.07951 19.926 6.60477 20.2905 9.85654C20.3393 10.2922 20.7048 10.621 21.141 10.621C21.1739 10.621 21.2058 10.619 21.2386 10.615C21.4667 10.59 21.6699 10.4771 21.8133 10.2972C21.9557 10.1174 22.0204 9.89351 21.9945 9.66467C21.5404 5.60746 18.4003 2.45862 14.356 2.00793Z" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M11.0317 12.9724C15.0208 16.9604 15.9258 12.3467 18.4656 14.8848C20.9143 17.3328 22.3216 17.8232 19.2192 20.9247C18.8306 21.237 16.3616 24.9943 7.6846 16.3197C-0.993478 7.644 2.76158 5.17244 3.07397 4.78395C6.18387 1.67385 6.66586 3.08938 9.11449 5.53733C11.6544 8.0765 7.04266 8.98441 11.0317 12.9724Z" />
+                                </svg>
+                            </div>
+
+                            <div class="ml-6">
+                                <p class="text-lg font-medium text-secondary-500">Call</p>
+                                <p class="text-sm text-slate-500">012.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6">
+                            <button
+                                class="w-full px-8 py-4 font-semibold text-blue-700 rounded bg-blue-100/50 group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/50 group-hover:bg-blue-700">Call
+                                Now</button>
+                        </div>
+                    </div>
+                    <div
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                                <svg class="w-7 h-7 " width="24" height="24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 12.015C2 6.74712 6.21 2 12.02 2C17.7 2 22 6.65699 22 11.985C22 18.1642 16.96 22 12 22C10.36 22 8.54 21.5593 7.08 20.698C6.57 20.3876 6.14 20.1572 5.59 20.3375L3.57 20.9384C3.06 21.0986 2.6 20.698 2.75 20.1572L3.42 17.9139C3.53 17.6034 3.51 17.2729 3.35 17.0125C2.49 15.4301 2 13.6975 2 12.015ZM10.7 12.015C10.7 12.7261 11.27 13.2969 11.98 13.307C12.69 13.307 13.26 12.7261 13.26 12.025C13.26 11.314 12.69 10.7431 11.98 10.7431C11.28 10.7331 10.7 11.314 10.7 12.015ZM15.31 12.025C15.31 12.7261 15.88 13.307 16.59 13.307C17.3 13.307 17.87 12.7261 17.87 12.025C17.87 11.314 17.3 10.7431 16.59 10.7431C15.88 10.7431 15.31 11.314 15.31 12.025ZM7.37 13.307C6.67 13.307 6.09 12.7261 6.09 12.025C6.09 11.314 6.66 10.7431 7.37 10.7431C8.08 10.7431 8.65 11.314 8.65 12.025C8.65 12.7261 8.08 13.2969 7.37 13.307Z" />
+                                </svg>
+
+                            </div>
+
+                            <div class="ml-6">
+                                <p class="text-lg font-medium text-secondary-500">Chat</p>
+                                <p class="text-sm text-slate-500">012.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6">
+                            <button
+                                class="w-full px-8 py-4 font-semibold text-blue-700 rounded bg-blue-100/50 group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/50 group-hover:bg-blue-700">Call
+                                Now</button>
+                        </div>
+                    </div>
+                    <div
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                                <svg class="w-7 h-7 " width="24" height="24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.11304 4.5H11.9051C14.3271 4.5 16.0181 6.16904 16.0181 8.56091V15.4391C16.0181 17.831 14.3271 19.5 11.9051 19.5H6.11304C3.69102 19.5 2 17.831 2 15.4391V8.56091C2 6.16904 3.69102 4.5 6.11304 4.5ZM19.958 6.87898C20.397 6.65563 20.912 6.67898 21.331 6.94294C21.75 7.20589 22 7.66274 22 8.16223V15.8384C22 16.3389 21.75 16.7947 21.331 17.0577C21.102 17.2008 20.846 17.2739 20.588 17.2739C20.373 17.2739 20.158 17.2231 19.957 17.1206L18.476 16.3734C17.928 16.0952 17.588 15.5369 17.588 14.9165V9.08305C17.588 8.46173 17.928 7.90335 18.476 7.62721L19.958 6.87898Z" />
+                                </svg>
+
+                            </div>
+
+                            <div class="ml-6">
+                                <p class="text-lg font-medium text-secondary-500">Video Call</p>
+                                <p class="text-sm text-slate-500">012.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6">
+                            <button
+                                class="w-full px-8 py-4 font-semibold text-blue-700 rounded bg-blue-100/50 group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/50 group-hover:bg-blue-700">Call
+                                Now</button>
+                        </div>
+                    </div>
+                    <div
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        <div class="flex items-center">
+                            <div
+                                class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
+                                <svg class="w-7 h-7 " width="24" height="24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.9395 3C18.2805 3 19.5705 3.53 20.5195 4.481C21.4695 5.43 22.0005 6.71 22.0005 8.05V15.95C22.0005 18.74 19.7305 21 16.9395 21H7.06049C4.26949 21 2.00049 18.74 2.00049 15.95V8.05C2.00049 5.26 4.25949 3 7.06049 3H16.9395ZM18.5305 9.54L18.6105 9.46C18.8495 9.17 18.8495 8.75 18.5995 8.46C18.4605 8.311 18.2695 8.22 18.0705 8.2C17.8605 8.189 17.6605 8.26 17.5095 8.4L13.0005 12C12.4205 12.481 11.5895 12.481 11.0005 12L6.50049 8.4C6.18949 8.17 5.75949 8.2 5.50049 8.47C5.23049 8.74 5.20049 9.17 5.42949 9.47L5.56049 9.6L10.1105 13.15C10.6705 13.59 11.3495 13.83 12.0605 13.83C12.7695 13.83 13.4605 13.59 14.0195 13.15L18.5305 9.54Z" />
+                                </svg>
+
+                            </div>
+
+                            <div class="ml-6">
+                                <p class="text-lg font-medium text-secondary-500">Message</p>
+                                <p class="text-sm text-slate-500">012.123.145.14</p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-6">
+                            <button
+                                class="w-full px-8 py-4 font-semibold text-blue-700 rounded bg-blue-100/50 group-hover:text-white group-hover:shadow-lg group-hover:shadow-blue-500/50 group-hover:bg-blue-700">Call
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1">
+                <img class="object-cover h-full" src="./assets/img/158043402-6563cee1-7ade-4957-9789-41fb7288fcda.png"
+                    alt="Doctor Contacto">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Foooter -->
+    <footer class="px-24 py-6 bg-indigo-100/50 max-w-7xl">
+        <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+            <div class="col-span-6">
+                <a href="/">
+                    <p class="text-xl font-black text-blue-700 font-title">Vaccination</p>
+                </a>
+                <p class="w-40 my-4 text-xs leading-normal text-slate-500">
+                    Our goal is to help the world free from the ongoing pandemic
+                </p>
+            </div>
+            <nav class="col-span-1 space-y-8 md:col-span-1 lg:col-span-2">
+                <p class="mb-3 font-semibold text-secondary-500">About</p>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">About
+                    Us</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">Features</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">News & Blog</a>
+            </nav>
+            <nav class="col-span-1 space-y-10 md:col-span-1 lg:col-span-2">
+                <p class="mb-3 font-semibold text-secondary-500">Company</p>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">How we
+                    work?</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">Capital</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">Security</a>
+            </nav>
+            <nav class="col-span-2 space-y-8 md:col-span-1 lg:col-span-2">
+                <p class="mb-3 font-semibold text-secondary-500">Support</p>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">FAQs</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">Support
+                    Center</a>
+                <a href="#"
+                    class="mb-3 text-sm text-slate-500 md:mb-2">Contact
+                    Us</a>
+            </nav>
+        </div>
+        <div
+            class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center">
+            <p class="mb-6 text-sm text-left text-gray-600 md:mb-0">© 2022  Vaccination. All rights reserved
+                Virtual.</p>
+            <div class="flex items-start justify-start space-x-6 md:items-center md:justify-center">
+                <a href="#" class="text-sm text-gray-600 transition hover:text-primary">Terms & Agreements</a>
+                <a href="#" class="text-sm text-gray-600 transition hover:text-primary">Privacy policy</a>
+            </div>
+        </div>
+        <p class="pt-12 text-sm text-slate-500">Entregable desarrollado con base a los contenidos de la Semana 3 🚀| Frontend Mission del programa Launch X - Innovacción Virtual Microsoft.</p>
+    </footer>
+
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+
+</html>
