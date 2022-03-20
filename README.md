@@ -1,10 +1,10 @@
 # Launch-X FrontEnd Mission | Semana 3 - Volando con estilo 🛰️🎨 Práctica CSS 🎨
 
 ## **Índice**
-1. [Contexto: Vacunación 💉](https://github.com/FedericoCadena9/LaunchX-Semana2#caso-pasteleria-)
-2. [Planeación de campaña de vacunación 📈](https://github.com/FedericoCadena9/LaunchX-Semana2#caso-pasteleria-)
-3. [Referencia 👁️](https://github.com/FedericoCadena9/LaunchX-Semana2#caso-pasteleria-)
-4. [Maquetación 👨‍💻](https://github.com/FedericoCadena9/LaunchX-Semana2#caso-pasteleria-)
+1. [Contexto: Vacunación 💉](https://github.com/FedericoCadena9/LaunchX-Semana3#contexto-vacunaci%C3%B3n-)
+2. [Planeación de campaña de vacunación 📈](https://github.com/FedericoCadena9/LaunchX-Semana3#planeaci%C3%B3n-de-campa%C3%B1a-de-vacunaci%C3%B3n-)
+3. [Referencia 👁️](https://github.com/FedericoCadena9/LaunchX-Semana3#referencia-%EF%B8%8F)
+4. [Maquetación 👨‍💻](https://github.com/FedericoCadena9/LaunchX-Semana3#maquetaci%C3%B3n-)
 
 
 <br/>
@@ -27,7 +27,7 @@ Para llevar a cabo la exitosa distribución de información se deberá crear una
 
 El diseño que servirá como referencia para la presente práctica es gracias al autor [Adhiari Subekti](https://dribbble.com/Adhiari_is), el shot de este diseño puede ser visualizado en el siguiente [link](https://dribbble.com/shots/16001939-Vaccination-Vaccine-landing-page-website).
 
-[Imagen de Referencia](./Vaccination-Vaccine-landing-page-website.png)
+![Imagen de Referencia](Vaccination-Vaccine-landing-page-website.png)
 
 <br/>
 
@@ -35,7 +35,7 @@ El diseño que servirá como referencia para la presente práctica es gracias al
 
 Siguiendo las mejores prácticas de este curso, la Maquetación del diseño anterior quedará de la siguiente manera:
 
-[Maquetación Hero](./Vaccination-Maquetacion.png)
+![Maquetación Hero](Vaccination-Maquetacion.png)
 
 > Encuentra la Landing Page completa en el siguiente [link](https://vaccination-x.vercel.app/).
 
