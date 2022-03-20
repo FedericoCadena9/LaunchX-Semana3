@@ -27,13 +27,15 @@ Para llevar a cabo la exitosa distribución de información se deberá crear una
 
 El diseño que servirá como referencia para la presente práctica es gracias al autor [Adhiari Subekti](https://dribbble.com/Adhiari_is), el shot de este diseño puede ser visualizado en el siguiente [link](https://dribbble.com/shots/16001939-Vaccination-Vaccine-landing-page-website).
 
+[Imagen de Referencia](./Vaccination-Vaccine-landing-page-website.png)
+
 <br/>
 
 ## **Maquetación 👨‍💻**
 
 Siguiendo las mejores prácticas de este curso, la Maquetación del diseño anterior quedará de la siguiente manera:
 
-
+[Maquetación Hero](./Vaccination-Maquetacion.png)
 
 > Encuentra la Landing Page completa en el siguiente [link](https://vaccination-x.vercel.app/).
 
