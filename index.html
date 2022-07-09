@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Vacunaciones 2022 | Vaccination</title>
 
     <style>
@@ -32,11 +32,15 @@
 
     <!-- Header -->
     <nav
-        class="fixed z-50 flex items-center justify-between min-w-full px-24 py-6 bg-white bg-opacity-80 backdrop-blur-sm firefox:backdrop-blur-sm firefox:backdrop-filter">
+        class="fixed z-50 flex items-center justify-between min-w-full sm:px-24 px-4 py-4 sm:py-6 bg-white bg-opacity-80 backdrop-blur-sm firefox:backdrop-blur-sm firefox:backdrop-filter">
         <!-- Logo -->
-        <p class="text-xl font-black text-blue-700 font-title">Vaccination</p>
+        <p class="sm:text-xl font-black text-blue-700 font-title">Vaccination</p>
 
-        <ul class="flex items-center space-x-12 font-medium text-slate-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700 sm:hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+
+        <ul class="flex items-center space-x-12 font-medium text-slate-500 hidden sm:inline-block">
             <li class="cursor-pointer hover:text-slate-500">Database</li>
             <li class="cursor-pointer hover:text-slate-500">Education</li>
             <li class="cursor-pointer hover:text-slate-500">News</li>
@@ -48,9 +52,9 @@
     </nav>
 
     <!-- Hero -->
-    <div class="relative grid grid-cols-2 gap-0">
-        <div class="pt-24">
-            <div class="inline-block pl-12 mb-6">
+    <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-0">
+        <div class="pt-16 sm:pt-24">
+            <div class="inline-block sm:pl-12 mb-6">
                 <svg class="h-12 rotate-180 text-slate-100" width="" height="138" viewBox="0 0 297 138"
                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M148.5 0L297 138H0L148.5 0Z" />
@@ -58,7 +62,7 @@
 
             </div>
 
-            <div class="px-24">
+            <div class="sm:px-24 px-4">
                 <h1 class="text-5xl font-black text-secondary-500 font-title ">Fight Virus With Vaccines</h1>
                 <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Neque
@@ -90,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="flex items-center pt-24 pb-40 space-x-4">
+                <div class="flex items-center pt-14 sm:pt-24 pb-14 sm:pb-40 space-x-4">
                     <div
                         class="flex items-center justify-center w-10 h-10 text-blue-700 border border-white rounded shadow-lg bg-blue-50 shadow-blue-200/50">
                         <svg class="w-5 h-5 " width="24" height="24" viewBox="0 0 24 24"
@@ -103,15 +107,17 @@
                 </div>
             </div>
         </div>
-        <div class="h-full">
+
+        <!-- Image -->
+        <div class="h-96 sm:h-full ">
             <img class="object-cover h-full"
                 src="./assets/img/front-view-female-nurse-white-medical-suit-with-red-mask-injection-her-hands-blue.jpg"
                 alt="">
         </div>
 
-        <div class="absolute space-y-8 bottom-6 left-24">
+        <div class="sm:absolute space-y-8 bottom-6 sm:left-24">
             <div
-                class="flex items-center py-8 space-x-12 bg-white rounded shadow-2xl px-14 shadow-blue-500/30 bg-opacity-90 backdrop-blur-sm backdrop-filter">
+                class="flex flex-col sm:flex-row sm:items-center py-8 space-y-12 sm:space-y-0 sm:space-x-12 bg-white rounded shadow-2xl px-4 sm:px-14 shadow-blue-500/30 bg-opacity-90 backdrop-blur-sm backdrop-filter">
                 <div class="flex space-x-4">
                     <div class="flex items-center justify-center w-6 h-6 text-blue-700 rounded bg-blue-50">
                         <svg class="w-3.5 h-3.5 " width="24" height="24" viewBox="0 0 24 24"
@@ -167,7 +173,7 @@
     </div>
 
     <!-- Logos -->
-    <div class="flex items-center justify-center my-24 space-x-20">
+    <div class="flex flex-col sm:flex-row items-center justify-center my-24 space-y-24 sm:space-y-0 sm:space-x-20">
         <img class="w-48 grayscale opacity-10" src="./assets/icon/Astra.svg" alt="AstraZeneca Logo">
         <img class="w-48 grayscale opacity-10" src="./assets/icon/Sinovac logo 1.svg" alt="Sinova Logo">
         <img class="w-48 grayscale opacity-10" src="./assets/icon/pfizer-wordmark-1 1.svg" alt="Pfizer Logo">
@@ -175,8 +181,8 @@
     </div>
 
     <!-- Por que debería de vacunarme -->
-    <div class="px-24">
-        <div class="w-1/2">
+    <div class=" px-4 sm:px-24">
+        <div class="sm:w-1/2">
             <h2 class="text-3xl font-black text-secondary-500 font-title ">Why should I vaccine?</h2>
             <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
                 doloribus
@@ -184,9 +190,9 @@
                 voluptatibus iusto dolores beatae minus nulla expedita.</p>
         </div>
 
-        <div class="flex items-center justify-between my-12">
+        <div class="sm:flex items-center justify-between my-12">
             <div
-                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                class="w-full sm:w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                 <div
                     class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
                     <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +209,7 @@
             </div>
 
             <div
-                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                class="w-full sm:w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                 <div
                     class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
                     <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +226,7 @@
             </div>
 
             <div
-                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                class="w-full sm:w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                 <div
                     class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
                     <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +243,7 @@
             </div>
 
             <div
-                class="w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                class="w-full sm:w-56 h-64 px-6 pt-3 pb-6 border rounded-md cursor-pointer group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                 <div
                     class="flex items-center justify-center w-10 h-10 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
                     <svg class="w-6 h-6 " width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -257,12 +263,12 @@
 
     <!-- Características -->
     <div class="my-40">
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2">
             <div class="col-span-1">
                 <img class="object-cover h-full" src="./assets/img/158043400-4e61ba68-49b1-4967-901f-80436161e101.png"
                     alt="Caracteristicas Enfermera">
             </div>
-            <div class="col-span-1 px-16">
+            <div class="col-span-1 px-4 sm:px-16 my-14 sm:my-0">
                 <h2 class="text-3xl font-black text-secondary-500 font-title ">Preparations before vaccine</h2>
                 <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Doloribus,
@@ -464,17 +470,17 @@
 
     <!-- Contacto -->
     <div class="my-40">
-        <div class="grid grid-cols-2">
-            <div class="col-span-1 px-24">
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+            <div class="col-span-1 px-4 sm:px-24">
                 <h2 class="text-3xl font-black text-secondary-500 font-title ">Emergency Contact</h2>
                 <p class="pt-8 leading-loose text-slate-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Doloribus,
                     similique dolore harum quis illo temporibus, eaque minus sapiente enim mollitia modi quisquam
                     impedit quam veniam consequatur tempora culpa.</p>
 
-                <div class="flex flex-wrap w-full gap-5 mt-40 ">
+                <div class="flex flex-wrap w-full gap-5 mt-20 sm:mt-40 ">
                     <div
-                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-full sm:w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                         <div class="flex items-center">
                             <div
                                 class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
@@ -501,7 +507,7 @@
                         </div>
                     </div>
                     <div
-                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-full sm:w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                         <div class="flex items-center">
                             <div
                                 class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
@@ -525,7 +531,7 @@
                         </div>
                     </div>
                     <div
-                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-full sm:w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                         <div class="flex items-center">
                             <div
                                 class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
@@ -549,7 +555,7 @@
                         </div>
                     </div>
                     <div
-                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
+                        class="px-6 pt-3 pb-6 border rounded-md cursor-pointer w-full sm:w-52 group border-slate-100 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-white">
                         <div class="flex items-center">
                             <div
                                 class="flex items-center justify-center w-12 h-12 my-4 text-blue-700 rounded bg-blue-50 group-hover:border group-hover:border-white group-hover:shadow-xl group-hover:shadow-blue-400/20">
@@ -574,7 +580,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 mt-20 sm:mt-0">
                 <img class="object-cover h-full" src="./assets/img/158043402-6563cee1-7ade-4957-9789-41fb7288fcda.png"
                     alt="Doctor Contacto">
             </div>
@@ -583,8 +589,8 @@
     </div>
 
     <!-- Foooter -->
-    <footer class="px-24 py-6 bg-indigo-100/50 max-w-7xl">
-        <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
+    <footer class="px-4 sm:px-24 py-6 bg-indigo-100/50 sm:max-w-7xl">
+        <div class="sm:grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
             <div class="col-span-6">
                 <a href="/">
                     <p class="text-xl font-black text-blue-700 font-title">Vaccination</p>
@@ -593,7 +599,7 @@
                     Our goal is to help the world free from the ongoing pandemic
                 </p>
             </div>
-            <nav class="col-span-1 space-y-8 md:col-span-1 lg:col-span-2">
+            <nav class="col-span-2 space-y-8 md:col-span-1 lg:col-span-2 mt-8 sm:mt-0">
                 <p class="mb-3 font-semibold text-secondary-500">About</p>
                 <a href="#"
                     class="mb-3 text-sm text-slate-500 md:mb-2">About
@@ -603,7 +609,7 @@
                 <a href="#"
                     class="mb-3 text-sm text-slate-500 md:mb-2">News & Blog</a>
             </nav>
-            <nav class="col-span-1 space-y-10 md:col-span-1 lg:col-span-2">
+            <nav class="col-span-2 space-y-10 md:col-span-1 lg:col-span-2 mt-8 sm:mt-0">
                 <p class="mb-3 font-semibold text-secondary-500">Company</p>
                 <a href="#"
                     class="mb-3 text-sm text-slate-500 md:mb-2">How we
@@ -613,7 +619,7 @@
                 <a href="#"
                     class="mb-3 text-sm text-slate-500 md:mb-2">Security</a>
             </nav>
-            <nav class="col-span-2 space-y-8 md:col-span-1 lg:col-span-2">
+            <nav class="col-span-2 space-y-8 md:col-span-1 lg:col-span-2 mt-8 sm:mt-0">
                 <p class="mb-3 font-semibold text-secondary-500">Support</p>
                 <a href="#"
                     class="mb-3 text-sm text-slate-500 md:mb-2">FAQs</a>
